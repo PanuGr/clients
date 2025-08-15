@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="fi" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="sitemap" href="/sitemap.xml" />
-    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>" type="image/x-icon">
-    
+    <link rel="sitemap" href="/sitemap.xml">
+    <link rel="shortcut icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>"
+        type="image/x-icon">
+
     <title>Teräsportaat - Lasikaiteet - Metallityö Suhonen Oy</title>
-    <meta name="description" content="Metallityö Suhonen Oy - Turkulainen täyden palvelun rakennusyhtiö. Teräsportaat, lasikaiteet ja metalli-lasirakenteet ammattitaidolla.">
-    <meta name="keywords" content="teräsportaat, lasikaiteet, metallityö, rakennusyhtiö, Turku, MINTT-portaat, KAILA-pyyhekuivaimet">
+    <meta name="description"
+        content="Metallityö Suhonen Oy - Turkulainen täyden palvelun rakennusyhtiö. Teräsportaat, lasikaiteet ja metalli-lasirakenteet ammattitaidolla.">
+    <meta name="keywords"
+        content="teräsportaat, lasikaiteet, metallityö, rakennusyhtiö, Turku, MINTT-portaat, KAILA-pyyhekuivaimet">
     <meta name="author" content="Metallityö Suhonen Oy">
-    
+
     <!-- Atkinson Hyperlegible Font -->
     <link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i" rel="stylesheet">
     <!-- DaisyUI + Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Ionicons -->
     <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <!--AnimateCSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <style>
         :root {
             interpolate-size: allow-keywords;
@@ -52,13 +56,19 @@
             text-rendering: optimizeSpeed;
         }
 
-        img, svg, video, picture {
+        img,
+        svg,
+        video,
+        picture {
             max-width: 100%;
             display: block;
             height: auto;
         }
 
-        input, button, textarea, select {
+        input,
+        button,
+        textarea,
+        select {
             font: inherit;
             field-sizing: content;
         }
@@ -66,6 +76,19 @@
         footer {
             content-visibility: auto;
             margin-top: auto;
+        }
+
+        /* Validation */
+        input:user-valid {
+            outline-color: var(--accent);
+        }
+
+        input:user-invalid {
+            outline-color: var(--primary-color);
+        }
+
+        input:focus:invalid {
+            outline: 3px solid var(--primary-color);
         }
 
         .gradient-bg {
@@ -90,6 +113,7 @@
             html {
                 scroll-behavior: auto;
             }
+
             * {
                 animation: none;
                 transition: none;
@@ -99,607 +123,606 @@
 </head>
 
 <body>
-    <a href="#main-content"
-        class="skip-link sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-red-600 focus:text-white">
-        Siirry pääsisältöön
-    </a>
-    
-    <nav aria-label="main navigation" class="navbar bg-white shadow-lg fixed top-0 z-50" id="navbar">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <button tabindex="0" type="button" id="menu-toggle" aria-label="Avaa navigointivalikko"
-                    class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </button>
-                <ul tabindex="0" class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-60 p-2 shadow-xl border">
-                    <li><a href="#etusivu" class="font-medium">Etusivu</a></li>
-                    <li><a href="#terasportaat" class="font-medium">Teräsportaat</a></li>
-                    <li><a href="#yritysasiakkaat" class="font-medium">Yritysasiakkaat</a></li>
-                    <li><a href="#taloyhtiot" class="font-medium">Taloyhtiöt</a></li>
-                    <li><a href="#yhteystiedot" class="font-medium">Yhteystiedot</a></li>
+    <a href="#main-content" class="skip-link focus:absolute focus:z-30 focus:p-4 focus:bg-red-600 focus:text-white"></a>
+        Siirry pääsisältöön </a>
+
+        <nav aria-label="main navigation" class="navbar bg-white shadow-lg fixed top-0 z-20" id="navbar">
+            <div class="navbar-start">
+                <div class="dropdown flex-shrink-0">
+                    <button tabindex="0" type="button" id="menu-toggle" aria-label="Avaa navigointivalikko"
+                        class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </button>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-60 p-2 shadow-xl border text-gray-500">
+                        <li><a href="#etusivu" class="font-medium">Etusivu</a></li>
+                        <li><a href="#terasportaat" class="font-medium">Teräsportaat</a></li>
+                        <li><a href="#yritysasiakkaat" class="font-medium">Yritysasiakkaat</a></li>
+                        <li><a href="#taloyhtiot" class="font-medium">Taloyhtiöt</a></li>
+                        <li><a href="#yhteystiedot" class="font-medium">Yhteystiedot</a></li>
+                    </ul>
+                </div>
+                <h1><a href="#" class="btn btn-ghost text-xl font-bold text-red-600">METALLITYÖ SUHONEN</a></h1>
+            </div>
+            <div class="navbar-center hidden lg:flex text-gray-500">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#etusivu" class="font-mediumover:text-red-600">Etusivu</a></li>
+                    <li><a href="#terasportaat" class="font-medium hover:text-red-600">Teräsportaat</a></li>
+                    <li><a href="#yritysasiakkaat" class="font-medium hover:text-red-600">Yritysasiakkaat</a></li>
+                    <li><a href="#taloyhtiot" class="font-medium hover:text-red-600">Taloyhtiöt</a></li>
+                    <li><a href="#yhteystiedot" class="font-medium hover:text-red-600">Yhteystiedot</a></li>
                 </ul>
             </div>
-            <h1><a href="#etusivu" class="btn btn-ghost text-xl font-bold text-red-600">METALLITYÖ SUHONEN</a></h1>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a href="#etusivu" class="font-medium hover:text-red-600">Etusivu</a></li>
-                <li><a href="#terasportaat" class="font-medium hover:text-red-600">Teräsportaat</a></li>
-                <li><a href="#yritysasiakkaat" class="font-medium hover:text-red-600">Yritysasiakkaat</a></li>
-                <li><a href="#taloyhtiot" class="font-medium hover:text-red-600">Taloyhtiöt</a></li>
-                <li><a href="#yhteystiedot" class="font-medium hover:text-red-600">Yhteystiedot</a></li>
-            </ul>
-        </div>
-        <div class="navbar-end">
-            <a href="#yhteystiedot" class="btn btn-error text-white font-semibold hover:scale-105 transition-transform">
-                Pyydä tarjous
-            </a>
-        </div>
-    </nav>
-
-    <header id="etusivu" class="hero min-h-screen gradient-bg relative overflow-hidden" style="margin-top: 0;">
-        <div class="hero-overlay hero-overlay-custom"></div>
-        <div class="hero-content text-white text-center relative z-10">
-            <div class="max-w-4xl animate__animated animate__fadeInUp">
-                <h1 class="mb-6 text-6xl lg:text-7xl font-bold leading-tight">
-                    Unelmiesi <span class="text-red-400">askelmat</span>
-                </h1>
-                <p class="mb-8 text-xl lg:text-2xl opacity-90 max-w-2xl mx-auto">
-                    Täyden palvelun metallityö ja lasirakenteet Turusta. Vuodesta 1952 luotettava kumppanisi vaativissa projekteissa.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="#yhteystiedot" class="btn btn-error btn-lg text-white font-semibold hover:scale-105 transition-all duration-300 shadow-xl">
-                        <ion-icon name="call-outline" class="mr-2"></ion-icon>
-                        Pyydä tarjous
-                    </a>
-                    <a href="#terasportaat" class="btn btn-outline btn-lg text-white border-white hover:bg-white hover:text-gray-800 transition-all duration-300">
-                        Tutustu tuotteisiin
-                    </a>
-                </div>
-                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                    <div class="glass-card p-6 rounded-xl">
-                        <div class="text-3xl font-bold text-red-400 mb-2">70+</div>
-                        <div class="text-sm opacity-80">Vuotta kokemusta</div>
-                    </div>
-                    <div class="glass-card p-6 rounded-xl">
-                        <div class="text-3xl font-bold text-red-400 mb-2">10+</div>
-                        <div class="text-sm opacity-80">Alan ammattilaista</div>
-                    </div>
-                    <div class="glass-card p-6 rounded-xl">
-                        <div class="text-3xl font-bold text-red-400 mb-2">100%</div>
-                        <div class="text-sm opacity-80">Suomalaista työtä</div>
-                    </div>
-                </div>
+            <div class="navbar-end">
+                <a href="#yhteystiedot"
+                    class="btn btn-error text-white font-semibold hover:scale-105 transition-transform">
+                    Pyydä tarjous
+                </a>
             </div>
-        </div>
-    </header>
+        </nav>
 
-    <main id="main-content">
-        <!-- About Section -->
-        <section class="py-20 bg-gray-50">
-            <div class="container mx-auto px-6">
-                <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-16">
-                        <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                            Täyden palvelun <span class="text-red-600">metallityö</span>
-                        </h2>
-                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Metallityö Suhonen Oy on turkulainen täyden palvelun rakennusyhtiö, joka on erikoistunut 
-                            kokonaisvaltaiseen metalli- ja lasirakentamiseen.
-                        </p>
+        <header id="etusivu" class="hero min-h-screen gradient-bg relative overflow-hidden pt-20">
+            <div class="hero-overlay hero-overlay-custom"></div>
+            <div class="hero-content text-white text-center relative z-10">
+                <div class="max-w-4xl animate__animated animate__fadeInUp">
+                    <h1 class="mb-6 text-6xl lg:text-7xl font-bold leading-tight">
+                        Unelmiesi <span class="text-red-400">askelmat</span>
+                    </h1>
+                    <p class="mb-8 text-xl lg:text-2xl opacity-90 max-w-2xl mx-auto">
+                        Täyden palvelun metallityö ja lasirakenteet Turusta. Vuodesta 1952 luotettava kumppanisi
+                        vaativissa
+                        projekteissa.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="#yhteystiedot"
+                            class="btn btn-error btn-lg text-white font-semibold hover:scale-105 transition-all duration-300 shadow-xl">
+                            <ion-icon name="call-outline" class="mr-2"></ion-icon>
+                            Pyydä tarjous
+                        </a>
+                        <a href="#terasportaat"
+                            class="btn btn-outline btn-lg text-white border-white hover:bg-white hover:text-gray-800 transition-all duration-300">
+                            Tutustu tuotteisiin
+                        </a>
                     </div>
-
-                    <div class="grid lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop&crop=center" 
-                                 alt="Teräsportaat ja lasikaiteet" 
-                                 class="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300">
+                    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="glass-card p-6 rounded-xl">
+                            <div class="text-3xl font-bold text-red-400 mb-2">70+</div>
+                            <div class="text-sm opacity-80">Vuotta kokemusta</div>
                         </div>
-                        <div class="space-y-6">
-                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Pitkä historia</h3>
-                                <p class="text-gray-600">
-                                    Yrityksemme on vanha tilauskonepaja, jonka syntyjuuret ovat olympiavuodessa 1952. 
-                                    Meillä on vuosikymmenten kokemusta vaativista metalli- ja lasirakenteista.
-                                </p>
-                            </div>
-                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Laaja asiakaskunta</h3>
-                                <p class="text-gray-600">
-                                    Asiakkainamme on rakennusliikkeitä, laivateollisuuden toimittajia, taloyhtiöitä, 
-                                    ravintoloita, myymälöitä sekä omakotitalorakentajia.
-                                </p>
-                            </div>
-                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Luotettava kumppani</h3>
-                                <p class="text-gray-600">
-                                    Toimintavarmuutemme, kokemuksemme sekä virheettömän laatumme vuoksi olemme 
-                                    erinomainen yhteistyökumppani.
-                                </p>
-                            </div>
+                        <div class="glass-card p-6 rounded-xl">
+                            <div class="text-3xl font-bold text-red-400 mb-2">10+</div>
+                            <div class="text-sm opacity-80">Alan ammattilaista</div>
+                        </div>
+                        <div class="glass-card p-6 rounded-xl">
+                            <div class="text-3xl font-bold text-red-400 mb-2">100%</div>
+                            <div class="text-sm opacity-80">Suomalaista työtä</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
 
-        <!-- Products Section -->
-        <section id="terasportaat" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-16">
-                        <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                            Tuotteet ja <span class="text-red-600">palvelut</span>
-                        </h2>
-                        <p class="text-xl text-gray-600">
-                            Suunnittelusta asennukseen - kaikki saman katon alta
-                        </p>
-                    </div>
-
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <!-- Yksityisasiakkaille -->
-                        <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                <ion-icon name="home-outline" class="text-2xl text-white"></ion-icon>
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Yksityisasiakkaille</h3>
-                            <ul class="space-y-3 mb-6">
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-red-600 mt-1 mr-3"></ion-icon>
-                                    <span>Viimeistellyt <strong>MINTT-teräsportaat</strong></span>
-                                </li>
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-red-600 mt-1 mr-3"></ion-icon>
-                                    <span>Laadukkaat puuaskelmat</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-red-600 mt-1 mr-3"></ion-icon>
-                                    <span>Tyylikkäät lasikaiteet</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-red-600 mt-1 mr-3"></ion-icon>
-                                    <span>Yksilölliset ratkaisut</span>
-                                </li>
-                            </ul>
-                            <div class="text-center">
-                                <a href="#yhteystiedot" class="btn btn-error text-white font-semibold hover:scale-105 transition-transform">
-                                    Pyydä tarjous
-                                </a>
-                            </div>
+        <main id="main-content">
+            <!-- About Section -->
+            <section class="py-20 bg-gray-50">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                                Täyden palvelun <span class="text-red-600">metallityö</span>
+                            </h2>
+                            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                                Metallityö Suhonen Oy on turkulainen täyden palvelun rakennusyhtiö, joka on erikoistunut
+                                kokonaisvaltaiseen metalli- ja lasirakentamiseen.
+                            </p>
                         </div>
 
-                        <!-- Yritysasiakkaille -->
-                        <div id="yritysasiakkaat" class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                <ion-icon name="business-outline" class="text-2xl text-white"></ion-icon>
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop&crop=center"
+                                    alt="Teräsportaat ja lasikaiteet" class="rounded-2xl shadow-2xl">
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Yritysasiakkaille</h3>
-                            <ul class="space-y-3 mb-6">
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-blue-600 mt-1 mr-3"></ion-icon>
-                                    <span>Arkkitehtisuunnitelman mukaiset rakenteet</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-blue-600 mt-1 mr-3"></ion-icon>
-                                    <span>Teräskaiteet parvekkeisiin</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-blue-600 mt-1 mr-3"></ion-icon>
-                                    <span>Lasikaiteet terasseille</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-blue-600 mt-1 mr-3"></ion-icon>
-                                    <span><strong>KAILA-pyyhekuivaimet</strong></span>
-                                </li>
-                            </ul>
-                            <div class="text-center">
-                                <a href="#yhteystiedot" class="btn btn-info text-white font-semibold hover:scale-105 transition-transform">
-                                    Pyydä tarjous
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Taloyhtiöille -->
-                        <div id="taloyhtiot" class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                <ion-icon name="apartment-outline" class="text-2xl text-white"></ion-icon>
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Taloyhtiöille</h3>
-                            <ul class="space-y-3 mb-6">
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-green-600 mt-1 mr-3"></ion-icon>
-                                    <span>Esteettömyysluiskat</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-green-600 mt-1 mr-3"></ion-icon>
-                                    <span>Turvakaiteet</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-green-600 mt-1 mr-3"></ion-icon>
-                                    <span>Isännöitsijöiden kanssa yhteistyö</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <ion-icon name="checkmark-circle" class="text-green-600 mt-1 mr-3"></ion-icon>
-                                    <span>Pitkäaikaiset ratkaisut</span>
-                                </li>
-                            </ul>
-                            <div class="text-center">
-                                <a href="#yhteystiedot" class="btn btn-success text-white font-semibold hover:scale-105 transition-transform">
-                                    Pyydä tarjous
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Process Section -->
-        <section class="py-20 bg-gray-50">
-            <div class="container mx-auto px-6">
-                <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-16">
-                        <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                            Prosessi <span class="text-red-600">alusta loppuun</span>
-                        </h2>
-                        <p class="text-xl text-gray-600">
-                            Vastaamme tuotteidemme suunnittelusta, valmistuksesta ja asennuksesta aina viimeistelyyn asti
-                        </p>
-                    </div>
-
-                    <div class="grid md:grid-cols-4 gap-8">
-                        <div class="text-center">
-                            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                <span class="text-2xl font-bold text-white">1</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">Suunnittelu</h3>
-                            <p class="text-gray-600">3D SolidWorks-ohjelmistolla tarkat suunnitelmat</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                <span class="text-2xl font-bold text-white">2</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">Valmistus</h3>
-                            <p class="text-gray-600">Ammattitaitoinen valmistus omassa konepajassa</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                <span class="text-2xl font-bold text-white">3</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">Asennus</h3>
-                            <p class="text-gray-600">Huolellinen asennus kokeneiden tekijöiden toimesta</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                <span class="text-2xl font-bold text-white">4</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">Viimeistely</h3>
-                            <p class="text-gray-600">Laadukas lopputulos täydellisesti viimeisteltynä</p>
-                        </div>
-                    </div>
-
-                    <div class="text-center mt-12">
-                        <div class="bg-blue-100 p-8 rounded-2xl max-w-2xl mx-auto">
-                            <h3 class="text-2xl font-bold text-gray-800 mb-4">
-                                Veloitukseton arviointikäynti Varsinais-Suomessa
-                            </h3>
-                            <p class="text-gray-600 mb-6">Tulemme paikalle arvioimaan projektinne ilman lisäkustannuksia</p>
-                            <a href="#yhteystiedot" class="btn btn-error btn-lg text-white font-semibold hover:scale-105 transition-transform">
-                                Varaa arviointikäynti
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="yhteystiedot" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-16">
-                        <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                            Ota <span class="text-red-600">yhteyttä</span>
-                        </h2>
-                        <p class="text-xl text-gray-600">
-                            Olemme valmiita toteuttamaan projektinne
-                        </p>
-                    </div>
-
-                    <div class="grid lg:grid-cols-2 gap-12">
-                        <!-- Contact Info -->
-                        <div class="space-y-8">
-                            <div class="bg-gray-50 p-8 rounded-2xl">
-                                <h3 class="text-2xl font-bold text-gray-800 mb-6">Yhteystiedot</h3>
-                                <div class="space-y-4">
-                                    <div class="flex items-center">
-                                        <ion-icon name="location-outline" class="text-2xl text-red-600 mr-4"></ion-icon>
-                                        <div>
-                                            <div class="font-semibold">Metallityö Suhonen Oy</div>
-                                            <div class="text-gray-600">Turku, Varsinais-Suomi</div>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <ion-icon name="call-outline" class="text-2xl text-red-600 mr-4"></ion-icon>
-                                        <div>
-                                            <div class="font-semibold">Puhelin</div>
-                                            <div class="text-gray-600">Soita meille</div>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <ion-icon name="mail-outline" class="text-2xl text-red-600 mr-4"></ion-icon>
-                                        <div>
-                                            <div class="font-semibold">Sähköposti</div>
-                                            <div class="text-gray-600">info@suhonen.fi</div>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <ion-icon name="time-outline" class="text-2xl text-red-600 mr-4"></ion-icon>
-                                        <div>
-                                            <div class="font-semibold">Palvelemme</div>
-                                            <div class="text-gray-600">Ma-Pe 8:00-16:00</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-blue-50 p-8 rounded-2xl">
-                                <h3 class="text-xl font-bold text-gray-800 mb-4">Seuraa meitä Facebookissa</h3>
-                                <p class="text-gray-600 mb-4">Pysy ajan tasalla uusimmista projekteistamme</p>
-                                <a href="#" class="btn btn-info text-white font-semibold">
-                                    <ion-icon name="logo-facebook" class="mr-2"></ion-icon>
-                                    Facebook
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Contact Form -->
-                        <div class="bg-gray-50 p-8 rounded-2xl">
-                            <h3 class="text-2xl font-bold text-gray-800 mb-6">Pyydä tarjous</h3>
                             <div class="space-y-6">
-                                <div class="grid md:grid-cols-2 gap-4">
-                                    <div>
-                                        <label class="label">
-                                            <span class="label-text font-semibold">Nimi *</span>
-                                        </label>
-                                        <input type="text" placeholder="Nimi" class="input input-bordered w-full" required />
-                                    </div>
-                                    <div>
-                                        <label class="label">
-                                            <span class="label-text font-semibold">Puhelin *</span>
-                                        </label>
-                                        <input type="tel" placeholder="Puhelinnumero" class="input input-bordered w-full" required />
-                                    </div>
+                                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Pitkä historia</h3>
+                                    <p class="text-gray-600">
+                                        Yrityksemme on vanha tilauskonepaja, jonka syntyjuuret ovat olympiavuodessa
+                                        1952.
+                                        Meillä on vuosikymmenten kokemusta vaativista metalli- ja lasirakenteista.
+                                    </p>
                                 </div>
-                                <div>
-                                    <label class="label">
-                                        <span class="label-text font-semibold">Sähköposti *</span>
-                                    </label>
-                                    <input type="email" placeholder="sähköposti@esimerkki.fi" class="input input-bordered w-full" required />
+                                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Laaja asiakaskunta</h3>
+                                    <p class="text-gray-600">
+                                        Asiakkainamme on rakennusliikkeitä, laivateollisuuden toimittajia, taloyhtiöitä,
+                                        ravintoloita, myymälöitä sekä omakotitalorakentajia.
+                                    </p>
                                 </div>
-                                <div>
-                                    <label class="label">
-                                        <span class="label-text font-semibold">Toimitusosoite *</span>
-                                    </label>
-                                    <input type="text" placeholder="Katuosoite, Kaupunki" class="input input-bordered w-full" required />
+                                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Luotettava kumppani</h3>
+                                    <p class="text-gray-600">
+                                        Toimintavarmuutemme, kokemuksemme sekä virheettömän laatumme vuoksi olemme
+                                        erinomainen yhteistyökumppani.
+                                    </p>
                                 </div>
-                                <div>
-                                    <label class="label">
-                                        <span class="label-text font-semibold">Olen kiinnostunut...</span>
-                                    </label>
-                                    <select class="select select-bordered w-full">
-                                        <option disabled selected>Valitse palvelu</option>
-                                        <option>MINTT-teräsportaat</option>
-                                        <option>Lasikaiteet</option>
-                                        <option>Teräskaiteet</option>
-                                        <option>KAILA-pyyhekuivaimet</option>
-                                        <option>Esteettömyysluiskat</option>
-                                        <option>Muu metallityö</option>
-                                        <option>En ole vielä varma</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label class="label">
-                                        <span class="label-text font-semibold">Lisätietoja projektista</span>
-                                    </label>
-                                    <textarea class="textarea textarea-bordered h-32 w-full" placeholder="Kerro lisää projektistasi..."></textarea>
-                                </div>
-                                <button type="button" class="btn btn-error btn-lg w-full text-white font-semibold hover:scale-105 transition-transform">
-                                    <ion-icon name="send-outline" class="mr-2"></ion-icon>
-                                    Lähetä tarjouspyyntö
-                                </button>
-                                <p class="text-sm text-gray-500 text-center">
-                                    * Pakolliset kentät. Vastaamme tarjouspyyntöihin 24 tunnin sisällä.
-                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="max-w-6xl mx-auto">
-                <div class="grid md:grid-cols-4 gap-8">
-                    <div class="md:col-span-2">
-                        <h3 class="text-2xl font-bold mb-4 text-red-400">METALLITYÖ SUHONEN OY</h3>
-                        <p class="text-gray-300 mb-4">
-                            Turkulainen täyden palvelun rakennusyhtiö vuodesta 1952. 
-                            Erikoistunut kokonaisvaltaiseen metalli- ja lasirakentamiseen.
-                        </p>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-300 hover:text-red-400 transition-colors">
-                                <ion-icon name="logo-facebook" class="text-2xl"></ion-icon>
-                            </a>
+            <!-- Products Section -->
+            <section id="terasportaat" class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                                Tuotteet ja <span class="text-red-600">palvelut</span>
+                            </h2>
+                            <p class="text-xl text-gray-600">
+                                Suunnittelusta asennukseen - kaikki saman katon alta
+                            </p>
+                        </div>
+
+                        <div class="grid lg:grid-cols-3 gap-8">
+                            <!-- Yksityisasiakkaille -->
+                            <div
+                                class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                                <div
+                                    class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <ion-icon name="home-outline" class="text-2xl text-white"></ion-icon>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Yksityisasiakkaille</h3>
+                                <ul class="space-y-3 mb-6 text-gray-500">
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-red-600 mt-1 mr-3 flex-shrink-0"></ion-icon>
+                                        <span>Viimeistellyt <strong>MINTT-teräsportaat</strong></span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-red-600 mt-1 mr-3 flex-shrink-0 "></ion-icon>
+                                        <span>Laadukkaat puuaskelmat</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-red-600 mt-1 mr-3 flex-shrink-0 "></ion-icon>
+                                        <span>Tyylikkäät lasikaiteet</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-red-600 mt-1 mr-3 flex-shrink-0 "></ion-icon>
+                                        <span>Yksilölliset ratkaisut</span>
+                                    </li>
+                                </ul>
+                                <div class="text-center">
+                                    <a href="#"
+                                        class="btn btn-error text-white font-semibold hover:scale-105 transition-transform">
+                                        Lue lisää
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Yritysasiakkaille -->
+                            <div id="yritysasiakkaat"
+                                class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                                <div
+                                    class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <ion-icon name="storefront-outline" class="text-2xl text-white"></ion-icon>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Yritysasiakkaille</h3>
+                                <ul class="space-y-3 mb-6 text-gray-500">
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-blue-600 mt-1 mr-3 flex-shrink-0 "></ion-icon>
+                                        <span>Arkkitehtisuunnitelman mukaiset rakenteet</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-blue-600 mt-1 mr-3 flex-shrink-0 "></ion-icon>
+                                        <span>Teräskaiteet parvekkeisiin</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-blue-600 mt-1 mr-3 flex-shrink-0 "></ion-icon>
+                                        <span>Lasikaiteet terasseille</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-blue-600 mt-1 mr-3 flex-shrink-0 "></ion-icon>
+                                        <span><strong>KAILA-pyyhekuivaimet</strong></span>
+                                    </li>
+                                </ul>
+                                <div class="text-center">
+                                    <a href="#"
+                                        class="btn btn-info text-white font-semibold hover:scale-105 transition-transform">
+                                        Lue lisää
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Taloyhtiöille -->
+                            <div id="taloyhtiot"
+                                class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                                <div
+                                    class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <ion-icon name="business-outline" class="text-2xl text-white"></ion-icon>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Taloyhtiöille</h3>
+                                <ul class="space-y-3 mb-6 text-gray-500">
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-green-600 mt-1 mr-3 flex-shrink-0 "></ion-icon>
+                                        <span>Esteettömyysluiskat</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-green-600 mt-1 mr-3 flex-shrink-0 "></ion-icon>
+                                        <span>Turvakaiteet</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-green-600 mt-1 mr-3 flex-shrink-0 "></ion-icon>
+                                        <span>Isännöitsijöiden kanssa yhteistyö</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <ion-icon name="checkmark-circle"
+                                            class="text-green-600 mt-1 mr-3 flex-shrink-0 "></ion-icon>
+                                        <span>Pitkäaikaiset ratkaisut</span>
+                                    </li>
+                                </ul>
+                                <div class="text-center">
+                                    <a href="#"
+                                        class="btn btn-success text-white font-semibold hover:scale-105 transition-transform">
+                                        Lue lisää
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- <div>
-                        <h4 class="text-lg font-semibold mb-4">Navigointi</h4>
-                        <ul class="space-y-2">
-                            <li><a href="#etusivu" class="text-gray-300 hover:text-red-400 transition-colors">Etusivu</a></li>
-                            <li><a href="#terasportaat" class="text-gray-300 hover:text-red-400 transition-colors">Teräsportaat</a></li>
-                            <li><a href="#yritysasiakkaat" class="text-gray-300 hover:text-red-400 transition-colors">Yritysasiakkaat</a></li>
-                            <li><a href="#taloyhtiot" class="text-gray-300 hover:text-red-400 transition-colors">Taloyhtiöt</a></li>
-                            <li><a href="#yhteystiedot" class="text-gray-300 hover:text-red-400 transition-colors">Yhteystiedot</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Palvelut</h4>
-                        <ul class="space-y-2">
-                            <li><span class="text-gray-300">MINTT-teräsportaat</span></li>
-                            <li><span class="text-gray-300">Lasikaiteet</span></li>
-                            <li><span class="text-gray-300">Teräskaiteet</span></li>
-                            <li><span class="text-gray-300">KAILA-pyyhekuivaimet</span></li>
-                            <li><span class="text-gray-300">Esteettömyysratkaisut</span></li>
-                        </ul>
-                    </div> -->
                 </div>
-                
-                <div class="border-t border-gray-700 mt-8 pt-8">
-                    <div class="flex flex-col md:flex-row justify-between items-center">
-                        <div class="text-center md:text-left mb-4 md:mb-0">
-                            <p class="text-gray-400">© 2025 Metallityö Suhonen Oy. Kaikki oikeudet pidätetään.</p>
+            </section>
+
+            <!-- Process Section -->
+            <section class="py-20 bg-gray-50">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                                Prosessi <span class="text-red-600">alusta loppuun</span>
+                            </h2>
+                            <p class="text-xl text-gray-600">
+                                Vastaamme tuotteidemme suunnittelusta, valmistuksesta ja asennuksesta aina viimeistelyyn
+                                asti
+                            </p>
                         </div>
-                        <div class="text-center md:text-right">
-                            <p class="text-sm text-gray-400 mb-2">Olemme tukeneet Lapsellista ry:n työtä</p>
-                            <img src="https://www.lapsellista.fi/media/images/logo.jpg" 
-                                 alt="Lapsellista ry logo" 
-                                 class="h-8 mx-auto md:mx-0 opacity-60">
+
+                        <div class="grid md:grid-cols-4 gap-8">
+                            <div class="text-center">
+                                <div
+                                    class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <span class="text-2xl font-bold text-white">1</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Suunnittelu</h3>
+                                <p class="text-gray-600">3D SolidWorks-ohjelmistolla tarkat suunnitelmat</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <span class="text-2xl font-bold text-white">2</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Valmistus</h3>
+                                <p class="text-gray-600">Ammattitaitoinen valmistus omassa konepajassa</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <span class="text-2xl font-bold text-white">3</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Asennus</h3>
+                                <p class="text-gray-600">Huolellinen asennus kokeneiden tekijöiden toimesta</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <span class="text-2xl font-bold text-white">4</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Viimeistely</h3>
+                                <p class="text-gray-600">Laadukas lopputulos täydellisesti viimeisteltynä</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-12">
+                            <div class="bg-blue-100 p-8 rounded-2xl max-w-2xl mx-auto">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                    Veloitukseton arviointikäynti Varsinais-Suomessa
+                                </h3>
+                                <p class="text-gray-600 mb-6">Tulemme paikalle arvioimaan projektinne ilman
+                                    lisäkustannuksia
+                                </p>
+                                <a href="#yhteystiedot"
+                                    class="btn btn-error btn-lg text-white font-semibold hover:scale-105 transition-transform">
+                                    Varaa arviointikäynti
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="yhteystiedot" class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                                Ota <span class="text-red-600">yhteyttä</span>
+                            </h2>
+                            <p class="text-xl text-gray-600">
+                                Olemme valmiita toteuttamaan projektinne
+                            </p>
+                        </div>
+
+                        <div class="grid lg:grid-cols-2 gap-12">
+                            <!-- Contact Info -->
+                            <div class="space-y-8">
+                                <div class="bg-gray-50 p-8 rounded-2xl">
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Yhteystiedot</h3>
+                                    <div class="space-y-4 text-gray-500">
+                                        <div class="flex items-center">
+                                            <ion-icon name="location-outline"
+                                                class="text-2xl text-red-600 mr-4"></ion-icon>
+                                            <div>
+                                                <div class="font-bold">Metallityö Suhonen Oy</div>
+                                                <div class="text-gray-600">Turku, Varsinais-Suomi</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <ion-icon name="call-outline" class="text-2xl text-red-600 mr-4"></ion-icon>
+                                            <div>
+                                                <div class="font-bold">Puhelin</div>
+                                                <a href="tel:+358407288641"
+                                                    class="text-gray-600">040&nbsp;728&nbsp;8641</a>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <ion-icon name="mail-outline" class="text-2xl text-red-600 mr-4"></ion-icon>
+                                            <div>
+                                                <div class="font-bold">Sähköposti</div>
+                                                <a href="mailto:jussi.suhonen@metallityosuhonen.fi"
+                                                    class="text-gray-600">jussi.suhonen@metallityosuhonen.fi</a>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <ion-icon name="time-outline" class="text-2xl text-red-600 mr-4"></ion-icon>
+                                            <div>
+                                                <div class="font-bold">Palvelemme</div>
+                                                <div class="text-gray-600">Ma-Pe 8:00-16:00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-blue-50 p-8 rounded-2xl">
+                                    <h3 class="text-xl font-bold text-gray-800 mb-4">Seuraa meitä Facebookissa</h3>
+                                    <p class="text-gray-600 mb-4">Pysy ajan tasalla uusimmista projekteistamme</p>
+                                    <a href="https://www.facebook.com/metallityosuhonenoy/"
+                                        class="btn btn-info text-white font-semibold">
+                                        <ion-icon name="logo-facebook" class="mr-2"></ion-icon>
+                                        Facebook
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Contact Form -->
+                            <form netlify autocomplete="on" class="bg-gray-50 p-8 rounded-2xl">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-6">Pyydä tarjous</h3>
+                                <div class="space-y-6">
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="nimi" class="label-text font-semibold">Nimi *</label>
+                                            <input type="text" id="nimi" name="nimi" placeholder="Nimi"
+                                                autocomplete="name" class="input input-bordered w-full" required>
+                                        </div>
+                                        <div>
+                                            <label for="puhelin" class="label-text font-semibold">Puhelin *</label>
+                                            <input type="tel" id="puhelin" name="puhelin" placeholder="Puhelinnumero"
+                                                pattern="^[0-9]*" title="Not letters are allowed"
+                                                autocomplete="tel-national" class="input input-bordered w-full"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="email" class="label-text font-semibold">Sähköposti *</label>
+                                        <input type="email" id="email" name="email"
+                                            placeholder="sähköposti@esimerkki.fi"
+                                            pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                                            class="input input-bordered w-full"
+                                            title="Please enter a valid email address" required>
+                                    </div>
+                                    <div>
+                                        <label class="label-text font-semibold" for="osoite">Toimitusosoite *</label>
+                                        <input id="osoite" name="osoite" type="text" placeholder="Katuosoite, Kaupunki"
+                                            autocomplete="address-level2" class="input input-bordered w-full" required>
+                                    </div>
+                                    <div>
+                                        <label class="label-text font-semibold" for="palvelu">Olen
+                                            kiinnostunut...</label>
+                                        <select id="palvelu" name="palvelu" class="select select-bordered w-full">
+                                            <option disabled selected>Valitse palvelu</option>
+                                            <option>MINTT-teräsportaat</option>
+                                            <option>Lasikaiteet</option>
+                                            <option>Teräskaiteet</option>
+                                            <option>KAILA-pyyhekuivaimet</option>
+                                            <option>Esteettömyysluiskat</option>
+                                            <option>Muu metallityö</option>
+                                            <option>En ole vielä varma</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="label-text font-semibold" for="message">
+                                            Lisätietoja projektista
+                                        </label>
+                                        <textarea id="message" name="message"
+                                            class="textarea textarea-bordered h-32 w-full"
+                                            placeholder="Kerro lisää projektistasi..."></textarea>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-error btn-lg w-full text-white font-semibold hover:scale-105 transition-transform">
+                                        <ion-icon name="send-outline" class="mr-2"></ion-icon>
+                                        Lähetä tarjouspyyntö
+                                    </button>
+                                    <p class="text-sm text-gray-500 text-center">
+                                        * Pakolliset kentät. Vastaamme tarjouspyyntöihin 24 tunnin sisällä.
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold mb-4 text-red-400">METALLITYÖ SUHONEN OY</h3>
+                            <p class="text-gray-300 mb-6">
+                                Turkulainen täyden palvelun rakennusyhtiö vuodesta 1952. 
+                                Erikoistunut kokonaisvaltaiseen metalli- ja lasirakentamiseen.
+                            </p>
+                            
+                            <!-- Business Information -->
+                            <div class="space-y-2 mb-6">
+                                <div class="text-sm text-gray-400">
+                                    <span class="font-semibold">Y-tunnus:</span> [Y-tunnus tähän]
+                                </div>
+                                <div class="text-sm text-gray-400">
+                                    <span class="font-semibold">Käyntiosoite:</span> Turku
+                                </div>
+                            </div>
+        
+                            <!-- Certificates -->
+                            <div class="flex space-x-4 mb-4">
+                                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=80&h=40&fit=crop&crop=center" 
+                                     alt="Sertifikaatti 1" 
+                                     class="h-10 opacity-80 hover:opacity-100 transition-opacity">
+                                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=80&h=40&fit=crop&crop=center" 
+                                     alt="Sertifikaatti 2" 
+                                     class="h-10 opacity-80 hover:opacity-100 transition-opacity">
+                            </div>
+        
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-300 hover:text-red-400 transition-colors">
+                                    <ion-icon name="logo-facebook" class="text-2xl"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div>
+                            <h4 class="text-lg font-semibold mb-4">Yhteystiedot</h4>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="text-sm font-semibold text-red-400">Asiakaspalvelu</div>
+                                    <div class="text-sm text-gray-300">Jussi Suhonen</div>
+                                    <div class="text-sm text-gray-400">Puh. [numero]</div>
+                                    <div class="text-sm text-gray-400">Email: [sähköposti]</div>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-red-400">Suunnittelu</div>
+                                    <div class="text-sm text-gray-400">3D SolidWorks</div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div>
+                            <h4 class="text-lg font-semibold mb-4">Palvelut</h4>
+                            <ul class="space-y-2">
+                                <li><a href="terasportaat.html" class="text-gray-300 hover:text-red-400 transition-colors">MINTT-teräsportaat</a></li>
+                                <li><a href="yritysasiakkaat.html" class="text-gray-300 hover:text-red-400 transition-colors">Yritysasiakkaat</a></li>
+                                <li><a href="taloyhtiot.html" class="text-gray-300 hover:text-red-400 transition-colors">Taloyhtiöt</a></li>
+                                <li><span class="text-gray-300">Lasikaiteet</span></li>
+                                <li><span class="text-gray-300">KAILA-pyyhekuivaimet</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Verkkolaskutus -->
+                    <div class="border-t border-gray-700 mt-8 pt-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="text-sm font-semibold text-red-400 mb-2">Verkkolaskutus</h5>
+                                <div class="text-xs text-gray-400 space-y-1">
+                                    <div><span class="font-semibold">Verkkolaskuosoite:</span> [osoite]</div>
+                                    <div><span class="font-semibold">Välittäjä:</span> Liaison Technologies Oy</div>
+                                    <div><span class="font-semibold">Välittäjän tunnus:</span> [tunnus]</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-xs text-gray-400 mb-2">Olemme tukeneet Lapsellista ry:n työtä</p>
+                                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=100&h=50&fit=crop&crop=center" 
+                                     alt="Lapsellista ry logo" 
+                                     class="h-6 ml-auto opacity-60">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="border-t border-gray-700 mt-6 pt-6 text-center">
+                        <p class="text-gray-400 text-sm">© 2025 Metallityö Suhonen Oy. Kaikki oikeudet pidätetään.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Mobile menu functionality
-            const menuToggle = document.getElementById('menu-toggle');
-            const dropdown = menuToggle.nextElementSibling;
-            
-            menuToggle.addEventListener('click', () => {
-                dropdown.classList.toggle('dropdown-open');
-            });
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Mobile menu functionality
+                const menuToggle = document.getElementById('menu-toggle');
+                const dropdown = menuToggle.nextElementSibling;
 
-            // Close menu when clicking outside
-            document.addEventListener('click', (e) => {
-                if (!menuToggle.contains(e.target) && !dropdown.contains(e.target)) {
-                    dropdown.classList.remove('dropdown-open');
-                }
-            });
-
-            // Close mobile menu when clicking a link
-            const mobileMenuLinks = dropdown.querySelectorAll('a');
-            mobileMenuLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    dropdown.classList.remove('dropdown-open');
+                menuToggle.addEventListener('click', () => {
+                    dropdown.classList.toggle('dropdown-open');
                 });
-            });
 
-            // Navbar scroll behavior
-            let lastScrollTop = 0;
-            const navbar = document.getElementById('navbar');
-            
-            window.addEventListener('scroll', function() {
-                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                
-                if (scrollTop > lastScrollTop && scrollTop > navbar.offsetHeight) {
-                    // Scrolling down - hide navbar
-                    navbar.style.transform = 'translateY(-100%)';
-                } else {
-                    // Scrolling up - show navbar
-                    navbar.style.transform = 'translateY(0)';
-                }
-                lastScrollTop = scrollTop;
-            });
-
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        const offsetTop = target.offsetTop - navbar.offsetHeight;
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
+                // Close menu when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!menuToggle.contains(e.target) && !dropdown.contains(e.target)) {
+                        dropdown.classList.remove('dropdown-open');
                     }
                 });
-            });
 
-            // Form submission handler
-            const form = document.querySelector('button[type="button"]');
-            form.addEventListener('click', (e) => {
-                e.preventDefault();
-                
-                // Get form values
-                const inputs = form.closest('.space-y-6').querySelectorAll('input, select, textarea');
-                let isValid = true;
-                
-                // Simple validation
-                inputs.forEach(input => {
-                    if (input.hasAttribute('required') && !input.value.trim()) {
-                        input.classList.add('input-error');
-                        isValid = false;
+                // Close mobile menu when clicking a link
+                const mobileMenuLinks = dropdown.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        dropdown.classList.remove('dropdown-open');
+                    });
+                });
+
+                // Navbar scroll behavior
+                let lastScrollTop = 0;
+                const navbar = document.getElementById('navbar');
+
+                window.addEventListener('scroll', function () {
+                    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                    if (scrollTop > lastScrollTop && scrollTop > navbar.offsetHeight) {
+                        // Scrolling down - hide navbar
+                        navbar.style.transform = 'translateY(-100%)';
                     } else {
-                        input.classList.remove('input-error');
+                        // Scrolling up - show navbar
+                        navbar.style.transform = 'translateY(0)';
                     }
-                });
-
-                if (isValid) {
-                    // Show success message (in real implementation, this would send the form)
-                    form.innerHTML = '<ion-icon name="checkmark-circle-outline" class="mr-2"></ion-icon>Kiitos! Otamme yhteyttä pian.';
-                    form.classList.remove('btn-error');
-                    form.classList.add('btn-success');
-                    form.disabled = true;
-                    
-                    setTimeout(() => {
-                        form.innerHTML = '<ion-icon name="send-outline" class="mr-2"></ion-icon>Lähetä tarjouspyyntö';
-                        form.classList.remove('btn-success');
-                        form.classList.add('btn-error');
-                        form.disabled = false;
-                    }, 3000);
-                } else {
-                    // Show error message
-                    const errorMsg = document.createElement('div');
-                    errorMsg.className = 'text-red-600 text-sm mt-2';
-                    errorMsg.textContent = 'Täytä kaikki pakolliset kentät';
-                    
-                    const existingError = form.parentNode.querySelector('.text-red-600');
-                    if (existingError) {
-                        existingError.remove();
-                    }
-                    
-                    form.parentNode.appendChild(errorMsg);
-                    
-                    setTimeout(() => {
-                        errorMsg.remove();
-                    }, 5000);
-                }
-            });
-
-            // Add loading animation to CTA buttons
-            document.querySelectorAll('.btn').forEach(button => {
-                button.addEventListener('click', function() {
-                    if (this.href && this.href.includes('#')) {
-                        this.classList.add('loading');
-                        setTimeout(() => {
-                            this.classList.remove('loading');
-                        }, 500);
-                    }
+                    lastScrollTop = scrollTop;
                 });
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
-                                
